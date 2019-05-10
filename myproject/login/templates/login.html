@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action='/login/validate/' method='post'>
+{% csrf_token %}
+User Name : <input type ='text' name='uname' /><br/>
+Password : <input type ='password' name='pwd' /><br/>
+<input type ='submit' value='submit' /><br/>
+</form>
+<a href="login/create_account/">Create Account</a>
+</body>
+</html>
